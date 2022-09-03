@@ -44,12 +44,68 @@
 </script>
 -->
 <script>
-const cars = ["BMW", "Volvo", "Mini"];
+
+// Arrow function : 
+
+/*var x = function(x, y) {
+    return x * y;
+ }
+ document.write(x(5,2))*/
+ 
+ 
+ // ES6
+  /*const x=(x,y)=> (x*y);
+ document.write(x(2,3))*/
+
+// The For/Of Loop:
+/*const cars = ["BMW", "Volvo", "Mini"];
 let text = "";
 
 for (let x of cars) {
   text += x + " ";
 }
+document.write(text)*/
+
+// the For/of LOOP in string:
+/*let language = "JavaScript";
+let text = "";
+
+for (let x of language) {
+    text += x + " ";
+}
+document.write(text)*/
+// Ternary Operator: 
+//syntax:
+// condition ? exprIfTrue : exprIfFalse
+/*var a=9;
+var b = a<10 ? 'True':'False';
+document.write(b);*/
+/*
+const greeting = (person) => {
+    const name = person ? person.name : "stranger";
+    return `Howdy, ${name}`;
+  }
+  
+  document.write(greeting({ name: "Alice" }));  // "Howdy, Alice"
+  document.write(greeting(null));
+  */
+class Student{
+    constractor(name,age){
+        this.name=name;
+        this.age=age;
+    }
+    test(){
+        document.write('helo word ')
+    }
+    arryFunction(){
+        const arry=[1,4,9,7];
+        arry.find(function(){
+            this.test()
+        },this);
+    }
+}
+let student=new Student('HAFIZ',30)
+student.arryFunction(); 
 </script>
 </p>
 </body>
